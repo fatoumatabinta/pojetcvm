@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+			div{
+                border: 3px solid black;
+                margin-left: 150px;
+                padding: 20px;
+            }
+		label{
+			display: inline;
+			
+		}
+		legend,label{
+			font-weight: bolder;
+			}
+			body{
+				background:linear-gradient(white,moccasin,moccasin);
+			}
+            a{
+                color:rgb(19, 112, 53);
+            }
+            input{
+                float: right;
+                right: 0px;
+                margin-right: 400px;
+                width: 200px;
+            }
+            button{
+                padding:5px;
+            }
+            .bouton{
+                margin-left:300px;
+                border:none;
+            }
+	</style>
+</head>
+<body>
+    <div>
+        <form action="ajoutProjet.php" method="post">
+        <legend><h1>Remplissage D'Informations Projet</h1></legend>
+        <label for="idProjet">Identifiant </label><input disabled id="idProjet" type="text" name="idProjet"><br><br>
+       <label for="nomProjet">Nom  projet</label><input type="text" id="nomProjet" name="nomProjet" > <br><br>
+
+       <label for="dateDebutProjet">Date Debut </label><input type="date" id="dateDebutProjet" name="dateDebutProjet" > <br><br>
+
+       <label for="dateFinPrevuPtrojet">Date Fin Prevu </label><input type="date" id="dateFinPrevuPtrojet" name="dateFinPrevuPtrojet" > <br><br>
+
+       <label for="dateFinReelProjet">Date Fin Reel </label><input type="date" id="dateFinReelProjet" name="dateFinReelProjet" > <br><br>
+
+       <label for="coutPrevueProjet">Cout Prevue </label><input type="number" id="coutPrevueProjet" name="coutPrevueProjet"> <br><br>
+
+       <label for="listesObjectifsProjet">Listes Objectifs </label><input type="text" id="listesObjectifsProjet" name="listesObjectifsProjet" > <br><br>
+
+       <label for="nomChefProjet">Nom du chef</label><input type="text" id="nomChefProjet" name="nomChefProjet" >
+      <br><br>
+       <div class="bouton"> 
+         <button type="submit">Enregistrer</button> 
+         <button type="reset">Supprimer</button>
+       </div>
+    </form>
+</div>
+    
+</body>
+</html>

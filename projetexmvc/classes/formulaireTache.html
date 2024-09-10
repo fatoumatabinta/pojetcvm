@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+			div{
+                border: 3px solid black;
+                margin-left: 150px;
+                padding: 20px;
+            }
+		label{
+			display: inline;
+			
+		}
+		legend,label{
+			font-weight: bolder;
+			}
+			body{
+				background:linear-gradient(rgb(0, 166, 255),white);
+			}
+            a{
+                color:black;
+            }
+            input{
+                float: right;
+                right: 0px;
+                margin-right: 400px;
+                width: 200px;
+            }
+            button{
+                padding:5px;
+            }
+            .bouton{
+                margin-left:300px;
+                border:none;
+            }
+	</style>
+</head>
+<body>
+    <div>
+        <form action="traitementAuthentic.php" method="post">
+        <legend><h1>Remplissage D'Informations Taches</h1></legend>
+        <label for="idProjet">Identifiant </label><input disabled id="idProjet" type="text" name="idProjet"><br><br>
+       <label for="nomTaches">Nom  Taches</label><input id="" name="nomTaches" type="text"> <br><br>
+
+       <label for="dateDebutTaches">Date Debut </label><input id="dateDebutTaches" name="dateDebutTaches" type="date"> <br><br>
+
+       <label for="dateFinPrevuPtrojet">Date Fin Prevu </label><input id="dateFinPrevuPtrojet" name="dateFinPrevuPtrojet" type="date"> <br><br>
+
+       <label for="dateFinReelTaches">Date Fin Reel </label><input id="dateFinReelTaches" name="dateFinReelTaches" type="date"> <br><br>
+
+       <label for="coutPrevueTaches">Cout Prevue Taches</label><input id="coutPrevueTaches" name="coutPrevueTaches" type="number"> <br><br>
+
+       <label for="listesObjectifsTaches">Listes Objectifs </label><input id="listesObjectifsTaches" name="listesObjectifsTaches" type="text"> <br><br>
+
+       <label for="etatTaches">etat</label><input id="etatTaches" name="etatTaches" type="text">
+      <br><br>
+       <div class="bouton"> 
+        <button type="submit">Enregistrer</button>  <button type="reset">Supprimer</button>
+       </div>
+       <br><br>
+       <label for="etat"> Etat</label><br>
+       <select name="etat" id="etat">
+           <option  value="encours">en cours </option>
+           <option selected value="affecte">affecte</option>
+           <option  value="suspendus">suspendus </option>
+           <option selected value="terminer">terminer</option>
+           <option selected value="non-affecter">non-affecter</option>
+       </select> 
+    </div>
+</form>
+</body>
+</html>
